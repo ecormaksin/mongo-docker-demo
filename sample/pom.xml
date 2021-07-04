@@ -44,8 +44,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>2.5.1</version>
                 <configuration>
-                    <source>1.7</source>
-                    <target>1.7</target>
+                    <source>1.8</source>
+                    <target>1.8</target>
                 </configuration>
             </plugin>
             <plugin>
@@ -89,7 +89,7 @@
                                 <image>
                                     <name>mongo-docker-demo</name>
                                     <build>
-                                        <from>openjdk:latest</from>
+                                        <from>openjdk:8</from>
                                         <assembly>
                                             <descriptorRef>project</descriptorRef>
                                             <inline>
@@ -111,7 +111,7 @@
                                 <image>
                                     <name>mongo-docker-demo-tests</name>
                                     <build>
-                                        <from>maven:latest</from>
+                                        <from>maven:3.8.1-openjdk-8</from>
                                         <ports> 
                                             <!-- For remote testing -->
                                             <port>5005</port>

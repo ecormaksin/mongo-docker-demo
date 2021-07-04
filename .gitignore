@@ -2,3 +2,7 @@
 nbactions.xml
 target
 
+.vscode
+.settings
+.classpath
+.project
